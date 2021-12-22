@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter using flex</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script src="../src/sample.js"></script>
+  </head>
+  <body>
+    <!-- layout -->
+    <div class="layout">
+      <!-- header -->
+      <header>
+        <div class="header__container-fixed">
+          <div class="header__container">
+            <div class="nav__container">
+              <div class="nav__container-inner">
+                <div class="logo-container">
+                  <a href="">
+                    <img
+                      class="brand"
+                      src="../src/images/svg/twitter.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="nav">
+                  <div class="nav__block">
+                    <a href="" class="nav__block-link">
+                      <img
+                        class="logo"
+                        src="../src/images/svg/home-active.svg"
+                        alt=""
+                      />
+                      <span class="nav__block--name">Home</span>
+                    </a>
+                  </div>
+
+                  <!-- other nav items -->
+                  <div class="nav__block">
+                    <a href="" class="nav__block-link">
+                      <img
+                        class="logo"
+                        src="../src/images/svg/home-active.svg"
+                        alt=""
+                      />
+                      <span class="nav__block--name">Home</span>
+                    </a>
+                  </div>
+                  <div class="nav__block">
+                    <a href="" class="nav__block-link">
+                      <img
+                        class="logo"
+                        src="../src/images/svg/home-active.svg"
+                        alt=""
+                      />
+                      <span class="nav__block--name">Home</span>
+                    </a>
+                  </div>
+                  <div class="nav__block">
+                    <a href="" class="nav__block-link">
+                      <img
+                        class="logo"
+                        src="../src/images/svg/home-active.svg"
+                        alt=""
+                      />
+                      <span class="nav__block--name">Home</span>
+                    </a>
+                  </div>
+                  <div class="nav__block">
+                    <a href="" class="nav__block-link">
+                      <img
+                        class="logo"
+                        src="../src/images/svg/home-active.svg"
+                        alt=""
+                      />
+                      <span class="nav__block--name">Home</span>
+                    </a>
+                  </div>
+                  <div class="nav__block">
+                    <a href="" class="nav__block-link">
+                      <img
+                        class="logo"
+                        src="../src/images/svg/home-active.svg"
+                        alt=""
+                      />
+                      <span class="nav__block--name">Home</span>
+                    </a>
+                  </div>
+                  <div class="nav__block">
+                    <a href="" class="nav__block-link">
+                      <img
+                        class="logo"
+                        src="../src/images/svg/home-active.svg"
+                        alt=""
+                      />
+                      <span class="nav__block--name">Home</span>
+                    </a>
+                  </div>
+                  <div class="nav__block">
+                    <a href="" class="nav__block-link">
+                      <img
+                        class="logo"
+                        src="../src/images/svg/home-active.svg"
+                        alt=""
+                      />
+                      <span class="nav__block--name">Home</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tweet__button">
+                <div class="tweet__button-inner">
+                  <a href="">
+                    <div class="tweet__button-actual">Tweet</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="profile">profile</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- main -->
+      <div class="content__main">
+        <!-- tweets -->
+        <div class="tweets-bar">
+          <div class="head__container">
+            <div class="head__container-inner">
+              <div class="head">
+                <div class="head__name">Home</div>
+                <div class="top__tweets">
+                  <a href=""
+                    ><img
+                      class="top_tweets-logo"
+                      src="../src/images/svg/top-tweets.svg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tweets__container">
+            <div class="tweet__main">
+              <div>
+                <img
+                  class="profile"
+                  src="../src/images/jpeg/profile-pic-1.jpg"
+                  alt=""
+                  class="author__logo"
+                />
+              </div>
+              <div class="tweet__input">
+                <div class="input__text">
+                  <input
+                    id="tweet-input"
+                    type="text"
+                    placeholder="What's happening?"
+                  />
+                </div>
+                <div class="tweet__visibility">
+                  <div class="tweet__visibility-inner">
+                    <img
+                      src="../src/images/svg/globe.svg"
+                      class="tweet__visibility-svg"
+                      alt=""
+                    />
+                    <span class="tweet__visibility-choice"
+                      >Everyone can reply</span
+                    >
+                  </div>
+                </div>
+                <div class="tweet__addons">
+                  <div class="tweet__addons-svgs">
+                    <div class="svg__block">
+                      <img src="../src/images/svg/media.svg" alt="" />
+                    </div>
+                    <div>other svgs</div>
+                  </div>
+
+                  <div class="tweet__addons-button">Tweet</div>
+                </div>
+              </div>
+            </div>
+            <div class="tweet__populate">
+              <div class="tweet__block">
+                <div class="tweet__block-profile">
+                  <img
+                    class="tweet__logo"
+                    src="../src/images/jpeg/harsha.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="tweet__block-content">
+                  <div class="tweet__block-misc">
+                    <div class="tweet__block-slug">
+                      <div class="tweet__block-author-details">
+                        <div class="tweet__block-author-name">Harsha</div>
+                        <div class="tweet__block-author-slug">
+                          @harsha-singh
+                        </div>
+                      </div>
+                      <div class="tweet__block-publish-time">2h</div>
+                    </div>
+                    <div class="tweet__block-ellipsis">
+                      <img
+                        class="ellipsis"
+                        src="../src/images/svg/kebab-menu.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="tweet__block-tweet">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.Lorem
+                    Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a
+                    galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially
+                    unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more
+                    recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum.Lorem Ipsum is
+                    simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of Letraset
+                    sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software like Aldus PageMaker
+                    including versions of Lorem Ipsum.Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since
+                    the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived
+                    not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- misc -->
+        <div class="misc-bar">
+          <div class="search">
+            <div class="search__padding">
+              <div class="search__icon">
+                <img
+                  class="search__icon-svg"
+                  src="../src/images/svg/search.svg"
+                  alt=""
+                />
+              </div>
+              <div class="search__input">
+                <input
+                  class="search__input-box"
+                  type="text"
+                  placeholder="Search Twitter"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="misc__inner">
+            <!-- <div class="whats-happening">
+              <div class="whats-happening__block">
+                <div class="whats-happening__heading">What's happening</div>
+              </div>
+
+              <div class="whats-happening__block">
+                <div class="whats-happening__meta-information">
+                  Trending in India
+                </div>
+                <div class="whats-happening__trend-name">#Spiderman</div>
+                <div class="whats-happening__meta-information">210K tweets</div>
+              </div>
+
+              <div class="whats-happening__block">
+                <div class="whats-happening__meta-information">
+                  Trending in India
+                </div>
+                <div class="whats-happening__trend-name">#NewtonSchool</div>
+                <div class="whats-happening__meta-information">50K tweets</div>
+              </div>
+
+              <div class="whats-happening__block">
+                <div class="whats-happening__meta-information">
+                  Trending - Trending
+                </div>
+                <div class="whats-happening__trend-name">#TobyMaquire</div>
+                <div class="whats-happening__meta-information">500K tweets</div>
+              </div>
+
+              <div class="whats-happening__block">
+                <div class="whats-happening__meta-information"></div>
+                <div class="whats-happening__trend-name">#Ashes</div>
+                <div class="whats-happening__meta-information">210k tweets</div>
+              </div>
+
+              <div class="whats-happening__block">
+                <div class="whats-happening__footer">
+                  <a href="">Show more</a>
+                </div>
+              </div>
+            </div>
+            <div class="who-to-follow">
+              <div class="who-to-follow__block">
+                <div class="who-to-follow__heading">Who to follow</div>
+              </div>
+
+              <div class="who-to-follow__block">
+                <div class="who-to-follow__inner-left">
+                  <img
+                    class="who-to-follow__author-logo"
+                    src="../src/images/jpeg/harsha.jpg"
+                    alt=""
+                  />
+                  <div class="who-to-follow__content">
+                    <div>
+                      <div class="who-to-follow__author-name">Harsha</div>
+                      <div class="who-to-follow__author-slug">
+                        @harsha-singh
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="who-to-follow__button">Follow</div>
+              </div>
+
+              <div class="who-to-follow__block">
+                <div class="who-to-follow__inner-left">
+                  <img
+                    class="who-to-follow__author-logo"
+                    src="../src/images/jpeg/badal.png"
+                    alt=""
+                  />
+                  <div class="who-to-follow__content">
+                    <div>
+                      <div class="who-to-follow__author-name">Badal</div>
+                      <div class="who-to-follow__author-slug">
+                        @badal-pareta
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="who-to-follow__button">Follow</div>
+              </div>
+
+              <div class="who-to-follow__block">
+                <div class="who-to-follow__inner-left">
+                  <img
+                    class="who-to-follow__author-logo"
+                    src="../src/images/jpeg/tuhin.jpg"
+                    alt=""
+                  />
+                  <div class="who-to-follow__content">
+                    <div>
+                      <div class="who-to-follow__author-name">Tuhin</div>
+                      <div class="who-to-follow__author-slug">
+                        @tuhin-bhomwick
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="who-to-follow__button">Follow</div>
+              </div>
+
+              <div class="who-to-follow__block">
+                <div class="who-to-follow__inner-left">
+                  <img
+                    class="who-to-follow__author-logo"
+                    src="../src/images/jpeg/raghav.jpg"
+                    alt=""
+                  />
+                  <div class="who-to-follow__content">
+                    <div>
+                      <div class="who-to-follow__author-name">Raghav</div>
+                      <div class="who-to-follow__author-slug">
+                        @ragavendhar-chouhan
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="who-to-follow__button">Follow</div>
+              </div>
+            </div> -->
+            <div class="whats-happening">
+                        <div class="whats-happening__head">
+                            What's Happening
+                        </div>
+                        <div class="whats-happening__block">
+                            <div class="whats-happening__slug">
+                                <div class="whats-happening__head__slug-misc">
+                                    Trending in Newton School
+                                </div>
+                                <div class="whats-happening__head__slug-ellipsis">
+                                    <img class = "ellpisis" src="../src/images/svg/kebab-menu.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="whats-happening__content">
+                                Karthik
+                            </div>
+                            <div class="whats-happening__slug">
+                                25.1M Tweets
+                            </div>
+                        </div>
+                        <div class="whats-happening__show-more">
+                            <a href=""> Show more</a>
+                        </div>
+                    </div>
+                    <div class="whats-happening">
+                        <div class="whats-happening__head">
+                            Who to follow
+                        </div>
+                        <div class="who-to-follow__block">
+                            <div class="who-to-follow__left">
+                                <div class="who-to-follow__image">
+                                    <img src="../src/images/jpeg/badal.png" alt="">
+                                </div>
+                                <div class="whats-happening__profile">
+                                    <div class="who-to-follow__author-name">
+                                        Badal
+                                    </div>
+                                    <div class="who-to-follow__author-slug">
+                                        @badal-pareta
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="who-to-follow__right">
+                                <div class="follow">Follow</div>
+                            </div>
+                        </div>
+                        <div class="whats-happening__show-more">
+                            <a href=""> Show more</a>
+                        </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
