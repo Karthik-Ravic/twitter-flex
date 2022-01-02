@@ -1,0 +1,45 @@
+:root {
+    --twitter-blue: #1D9BF0;
+    --primary-white: white;
+    --primary-grey: #F7F9F9;
+    --border-grey: #eff3f4;
+    --primary-black: rgb(15, 20, 25);
+    --hover-grey: #E7E7E8;
+    --hover-grey-two: #F7F7F7;
+    --primary-font: #0F1419;
+    --secondary-font: #536471;
+    --secondary-blue: #8ECDF8;
+    --slug-grey: #5D6D79;
+    --hover-blue: #E1EEF6;
+    --hover-green: #DEF1EB;
+    --hover-red: #F7E0EB;
+    --hover-blue-primary: #1A8CD8;
+}
+html {
+    font-family: Twitterchirp, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+    color: var(--primary-font);
+    font-size: 15px;
+    line-height: 20px;
+}
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+body {
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+/* a {
+    text-decoration: none;
+    color: var(--twitter-blue);
+}
+input {
+    border: 0px solid;
+}
+textarea:focus, input:focus {
+    outline: none;
+} */

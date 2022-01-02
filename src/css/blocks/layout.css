@@ -1,0 +1,25 @@
+.layout {
+    display: flex;
+    width: 95vw;
+    /* flex-direction: row; */
+    flex-grow: 1;
+    /* flex-basis: auto; */
+    justify-content: center;
+    /* align-items: stretch; */
+    
+}
+
+@media only screen and (max-width: 1025px) {
+    .layout {
+        justify-content: flex-start;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .layout {
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 100vw;
+        width: 100vw        ;
+    }
+    
+}

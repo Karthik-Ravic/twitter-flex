@@ -5,505 +5,486 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter using flex</title>
-    <link rel="stylesheet" href="src/css/style.css" />
-    <script src="src/sample.js"></script>
+    <!-- <link rel="stylesheet" href="src/css/style.css" /> -->
+    <link rel="stylesheet" href="./src/css/blocks/test.css">
+    <link rel="stylesheet" href="./src/css/blocks/layout.css">
+    <link rel="stylesheet" href="./src/css/blocks/global.css">
+    <!-- <link rel="stylesheet" href="./src/css/blocks/header.css">
+    <link rel="stylesheet" href="./src/css/blocks/main.css">
+    <link rel="stylesheet" href="./src/css/blocks/tweet-input.css">
+    <link rel="stylesheet" href="./src/css/blocks/tweet-populate.css">
+    <link rel="stylesheet" href="./src/css/blocks/misc-bar.css">
+    <link rel="stylesheet" href="./src/css/blocks/whats-happening.css">
+    <link rel="stylesheet" href="./src/css/blocks/who-to-follow.css">
+    <link rel="stylesheet" href="./src/css/blocks/screen-responsive.css">
+    <link rel="stylesheet" href="./src/css/blocks/device-responsive.css"> -->
+    <!-- <script src="./script.js"></script> -->
+    <style>
+      @font-face {
+      font-family: TwitterChirpExtendedHeavy;
+      src: url(https://abs.twimg.com/fonts/v1/chirp-extended-heavy-web.woff2) format('woff2');
+      src: url(https://abs.twimg.com/fonts/v1/chirp-extended-heavy-web.woff) format('woff');
+      font-weight: 800;
+      font-style: 'normal';
+      font-display: 'swap';
+    }
+    @font-face {
+      font-family: TwitterChirp;
+      src: url(https://abs.twimg.com/fonts/v2/chirp-regular-web.woff2) format('woff2');
+      src: url(https://abs.twimg.com/fonts/v2/chirp-regular-web.woff) format('woff');
+      font-weight: 400;
+      font-style: 'normal';
+      font-display: 'swap';
+    }
+    @font-face {
+      font-family: TwitterChirp;
+      src: url(https://abs.twimg.com/fonts/v2/chirp-medium-web.woff2) format('woff2');
+      src: url(https://abs.twimg.com/fonts/v2/chirp-medium-web.woff) format('woff');
+      font-weight: 500;
+      font-style: 'normal';
+      font-display: 'swap';
+    }
+    @font-face {
+      font-family: TwitterChirp;
+      src: url(https://abs.twimg.com/fonts/v2/chirp-bold-web.woff2) format('woff2');
+      src: url(https://abs.twimg.com/fonts/v2/chirp-bold-web.woff) format('woff');
+      font-weight: 700;
+      font-style: 'normal';
+      font-display: 'swap';
+    }
+    @font-face {
+      font-family: TwitterChirp;
+      src: url(https://abs.twimg.com/fonts/v2/chirp-heavy-web.woff2) format('woff2');
+      src: url(https://abs.twimg.com/fonts/v2/chirp-heavy-web.woff) format('woff');
+      font-weight: 800;
+      font-style: 'normal';
+      font-display: 'swap';
+    }
+    </style>  
   </head>
   <body>
-    <!-- layout -->
-    <div class="layout">
-      <!-- header -->
-      <header>
-        <div class="header__container-fixed">
-          <div class="header__container">
-            <div class="nav__container">
-              <div class="nav__container-inner">
-                <div class="logo-container">
-                  <a href="">
-                    <img
-                      class="brand"
-                      src="src/images/svg/twitter.svg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="nav">
-                  <div class="nav__block">
-                    <a href="" class="nav__block-link">
-                      <img
-                        class="logo"
-                        src="src/images/svg/home-active.svg"
-                        alt=""
-                      />
-                      <span class="nav__block--name">Home</span>
-                    </a>
+      <div class="layout">
+          <div class="one">
+            <div class="one__one">
+              <div class="one__one-inner">
+                <div class="top">
+                  <div class="logo-box">
+                    <h1 class="logo__container">
+                      <img class = "twitter" src="./src/images/svg/twitter.svg" alt="">
+                    </h1>
                   </div>
-
-                  <!-- other nav items -->
-                  <div class="nav__block">
-                    <a href="" class="nav__block-link">
-                      <img
-                        class="logo"
-                        src="src/images/svg/home-active.svg"
-                        alt=""
-                      />
-                      <span class="nav__block--name">Home</span>
-                    </a>
-                  </div>
-                  <div class="nav__block">
-                    <a href="" class="nav__block-link">
-                      <img
-                        class="logo"
-                        src="src/images/svg/home-active.svg"
-                        alt=""
-                      />
-                      <span class="nav__block--name">Home</span>
-                    </a>
-                  </div>
-                  <div class="nav__block">
-                    <a href="" class="nav__block-link">
-                      <img
-                        class="logo"
-                        src="src/images/svg/home-active.svg"
-                        alt=""
-                      />
-                      <span class="nav__block--name">Home</span>
-                    </a>
-                  </div>
-                  <div class="nav__block">
-                    <a href="" class="nav__block-link">
-                      <img
-                        class="logo"
-                        src="src/images/svg/home-active.svg"
-                        alt=""
-                      />
-                      <span class="nav__block--name">Home</span>
-                    </a>
-                  </div>
-                  <div class="nav__block">
-                    <a href="" class="nav__block-link">
-                      <img
-                        class="logo"
-                        src="src/images/svg/home-active.svg"
-                        alt=""
-                      />
-                      <span class="nav__block--name">Home</span>
-                    </a>
-                  </div>
-                  <div class="nav__block">
-                    <a href="" class="nav__block-link">
-                      <img
-                        class="logo"
-                        src="src/images/svg/home-active.svg"
-                        alt=""
-                      />
-                      <span class="nav__block--name">Home</span>
-                    </a>
-                  </div>
-                  <div class="nav__block">
-                    <a href="" class="nav__block-link">
-                      <img
-                        class="logo"
-                        src="src/images/svg/home-active.svg"
-                        alt=""
-                      />
-                      <span class="nav__block--name">Home</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="tweet__button">
-                <div class="tweet__button-inner">
-                  <a href="">
-                    <div class="tweet__button-actual">Tweet</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="profile">profile</div>
-          </div>
-        </div>
-      </header>
-
-      <!-- main -->
-      <div class="content__main">
-        <!-- tweets -->
-        <div class="tweets-bar">
-          <div class="head__container">
-            <div class="head__container-inner">
-              <div class="head">
-                <div class="head__name">Home</div>
-                <div class="top__tweets">
-                  <a href=""
-                    ><img
-                      class="top_tweets-logo"
-                      src="src/images/svg/top-tweets.svg"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tweets__container">
-            <div class="tweet__main">
-              <div>
-                <img
-                  class="profile"
-                  src="src/images/jpeg/profile-pic-1.jpg"
-                  alt=""
-                  class="author__logo"
-                />
-              </div>
-              <div class="tweet__input">
-                <div class="input__text">
-                  <input
-                    id="tweet-input"
-                    type="text"
-                    placeholder="What's happening?"
-                  />
-                </div>
-                <div class="tweet__visibility">
-                  <div class="tweet__visibility-inner">
-                    <img
-                      src="src/images/svg/globe.svg"
-                      class="tweet__visibility-svg"
-                      alt=""
-                    />
-                    <span class="tweet__visibility-choice"
-                      >Everyone can reply</span
-                    >
-                  </div>
-                </div>
-                <div class="tweet__addons">
-                  <div class="tweet__addons-svgs">
-                    <div class="svg__block">
-                      <img src="src/images/svg/media.svg" alt="" />
+                  <div class="nav">
+                    <div class="options__container">
+                      <a class="options">
+                        <div class="menu__item">
+                          <div class="menu__item-hover">
+                            <img class = "icons" src="./src/images/svg/home-active.svg" alt="">
+                            <span class="icon__desc--active">Home</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="options">
+                        <div class="menu__item">
+                          <span class="menu__item-hover">
+                            <img class = "icons" src="./src/images/svg/explore.svg" alt="">
+                            <span class="icon__desc">Explore</span>
+                          </span>
+                        </div>
+                      </a>
+                      <a class="options">
+                        <div class="menu__item">
+                          <span class="menu__item-hover">
+                            <img class = "icons" src="./src/images/svg/notifications.svg" alt="">
+                            <span class="icon__desc">Notifications</span>
+                          </span>
+                        </div>
+                      </a>
+                      <a class="options">
+                        <div class="menu__item">
+                          <span class="menu__item-hover">
+                            <img class = "icons" src="./src/images/svg/messages.svg" alt="">
+                            <span class="icon__desc">Messages</span>
+                          </span>
+                        </div>
+                      </a>
+                      <a class="options extra__menu extra__menu-2">
+                        <div class="menu__item">
+                          <span class="menu__item-hover">
+                            <img class = "icons" src="./src/images/svg/bookmarks.svg" alt="">
+                            <span class="icon__desc">Bookmarks</span>
+                          </span>
+                        </div>
+                      </a>
+                      <a class="options extra__menu extra__menu-2">
+                        <div class="menu__item">
+                          <span class="menu__item-hover">
+                            <img class = "icons" src="./src/images/svg/lists.svg" alt="">
+                            <span class="icon__desc">Lists</span>
+                          </span>
+                        </div>
+                      </a>
+                      <a class="options extra__menu-2">
+                        <div class="menu__item"><span class="menu__item-hover">
+                          <img class = "icons" src="./src/images/svg/profile.svg" alt="">
+                          <span class="icon__desc">profile</span>
+                        </span>
+                        </div>
+                      </a>
+                      <a class="options extra__menu-2">
+                        <div class="menu__item">
+                          <span class="menu__item-hover">
+                            <img class = "icons" src="./src/images/svg/more.svg" alt="">
+                            <span class="icon__desc">More</span></div>
+                          </span>
+                      </a>
                     </div>
-                    <div>other svgs</div>
+                    <div class="button">
+                      <div class="tweet-button__primary">
+                        <span class="tweet__now">Tweet</span>
+                      </div>
+                    </div>
+                    <!-- <div class="button--alternative"></div> -->
                   </div>
-
-                  <div class="tweet__addons-button">Tweet</div>
+                </div>
+                <div class="bottom">
+                  <!-- profile -->
+                  <div class="bottom__inner">
+                    <div class="bottom__left">
+                      <img class = "profile" src="./src/images/jpeg/profile-pic-1.jpg" alt="">
+                      <div class="profile__desc">
+                        <div class="profile__name"> Karthik</div>
+                        <div class="profile__slug">@ItsJustKarthik</div>
+                      </div>
+                      
+                    </div>
+                    <div class="bottom__right">
+                      <img class = "profile__kebab" src="./src/images/svg/kebab-menu.svg" alt="">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="tweet__populate">
-              <div class="tweet__block">
-                <div class="tweet__block-profile">
-                  <img
-                    class="tweet__logo"
-                    src="src/images/jpeg/harsha.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="tweet__block-content">
-                  <div class="tweet__block-misc">
-                    <div class="tweet__block-slug">
-                      <div class="tweet__block-author-details">
-                        <div class="tweet__block-author-name">Harsha</div>
-                        <div class="tweet__block-author-slug">
-                          @harsha-singh
+            
+          </div>
+          <div class="two">
+            <div class="two__inner">
+              <div class="two__one">
+                <div class="two__one-inner">
+                  <div class="head">
+                    <div class="head__inner">
+
+                      <span class="home-primary">Home</span>
+                      <div class="top__tweets-container">
+                        
+                        <img class = "top__tweets-logo" src="./src/images/svg/top-tweets.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tweet">
+                    <div class="tweet__inner">
+                      <div class="logo__box">
+                        
+                        <div class="tweet__logo">   
+                          <img class = "tweet__profile" src="./src/images/jpeg/profile-pic-1.jpg" alt="">
                         </div>
                       </div>
-                      <div class="tweet__block-publish-time">2h</div>
-                    </div>
-                    <div class="tweet__block-ellipsis">
-                      <img
-                        class="ellipsis"
-                        src="src/images/svg/kebab-menu.svg"
-                        alt=""
-                      />
+                        <div class="tweet__container">  
+                          <div class="text-area__container">
+                            <input class = "text-area" type="text" placeholder="What's happening?">
+                          </div>
+                          <div class="icons__container">
+                            <div class="icons__container-left">
+                              <div class="icons__solo-container">
+                                <img class = "attach__icons" src="./src/images/svg/media.svg" alt="">
+                              </div>
+                              <div class="icons__solo-container">
+                                <img class = "attach__icons" src="./src/images/svg/gif.svg" alt="">
+                              </div>
+                              <div class="icons__solo-container">
+                                <img class = "attach__icons" src="./src/images/svg/poll.svg" alt="">
+                              </div>
+                              <div class="icons__solo-container">
+                                <img class = "attach__icons" src="./src/images/svg/emoji.svg" alt="">
+                              </div>
+                              <div class="icons__solo-container">
+                                <img class = "attach__icons" src="./src/images/svg/schedule.svg" alt="">
+                              </div>
+                              <div class="icons__solo-container">
+                                <img class = "attach__icons" src="./src/images/svg/location-pin.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="icons__container-right">
+                              <div class="tweet-button__secondary">
+                                <span class="tweet-button__secondary-inner">Tweet</span>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
                     </div>
                   </div>
-                  <div class="tweet__block-tweet">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.Lorem
-                    Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy
-                    text ever since the 1500s, when an unknown printer took a
-                    galley of type and scrambled it to make a type specimen
-                    book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release
-                    of Letraset sheets containing Lorem Ipsum passages, and more
-                    recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.Lorem Ipsum is
-                    simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of
-                    type and scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also the leap into
-                    electronic typesetting, remaining essentially unchanged. It
-                    was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently
-                    with desktop publishing software like Aldus PageMaker
-                    including versions of Lorem Ipsum.Lorem Ipsum is simply
-                    dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since
-                    the 1500s, when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived
-                    not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with
-                    desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
-                    the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with
-                    desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
-                    the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with
-                    desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
-                    the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with
-                    desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
-                    the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with
-                    desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
-                    the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with
-                    desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
-                    the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with
-                    desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
-                    the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with
-                    desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum.
+                  <div class="line-break__container">
+                    <div class="line-break"></div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- misc -->
-        <div class="misc-bar">
-          <div class="search">
-            <div class="search__padding">
-              <div class="search__icon">
-                <img
-                  class="search__icon-svg"
-                  src="src/images/svg/search.svg"
-                  alt=""
-                />
-              </div>
-              <div class="search__input">
-                <input
-                  class="search__input-box"
-                  type="text"
-                  placeholder="Search Twitter"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="misc__inner">
-            <!-- <div class="whats-happening">
-              <div class="whats-happening__block">
-                <div class="whats-happening__heading">What's happening</div>
-              </div>
+                  <div class="tweet__populate">
+                    <div class="tweet__block">
+                      <div class="tweet__block-profile">
+                        <img
+                          class="tweet__logo"
+                          src="src/images/jpeg/harsha.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="tweet__block-content">
+                        <div class="tweet__block-misc">
+                          <div class="tweet__block-slug">
+                            <div class="tweet__block-author-details">
+                              <div class="tweet__block-author-name">Harsha</div>
+                              <div class="tweet__block-author-slug">
+                                @harsha-singh
+                              </div>
+                            </div>
+                            <div class="tweet__block-dot">
+                              <span>&middot;</span>
+                            </div>
+                            <div class="tweet__block-publish-time">2h</div>
+                          </div>
+                          <div class="tweet__block-ellipsis">
+                            <div class="ellipsis-center">
 
-              <div class="whats-happening__block">
-                <div class="whats-happening__meta-information">
-                  Trending in India
-                </div>
-                <div class="whats-happening__trend-name">#Spiderman</div>
-                <div class="whats-happening__meta-information">210K tweets</div>
-              </div>
+                              <img
+                              class="ellipsis"
+                              src="src/images/svg/kebab-menu.svg"
+                              alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tweet__block-tweet">
+                           Lorem Ipsum has been
+                          the industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and scrambled
+                          it to make a type specimen book. It has survived not only
+                          five centuries, but also the leap into electronic
+                          typesetting, remaining essentially unchanged. It was
+                          popularised in the 1960s with the release of Letraset sheets
+                          containing Lorem Ipsum passages, and more recently with
+                          desktop publishing software like Aldus PageMaker including
+                          versions of Lorem Ipsum.
+                        </div>
+                        <div class="tweet__block-action__buttons">
+                          <div class="tweet__block-action__buttons-container">
+                            <div class="tweet__block-icon__container blue-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon blue" src="./src/images/svg/reply.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="tweet__block-icon__container green-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon green" src="./src/images/svg/retweet.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="tweet__block-icon__container red-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon red" src="./src/images/svg/like.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="tweet__block-icon__container blue-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon blue" src="./src/images/svg/share.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tweet__block">
+                      <div class="tweet__block-profile">
+                        <img
+                          class="tweet__logo"
+                          src="src/images/jpeg/harsha.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="tweet__block-content">
+                        <div class="tweet__block-misc">
+                          <div class="tweet__block-slug">
+                            <div class="tweet__block-author-details">
+                              <div class="tweet__block-author-name">Harsha</div>
+                              <div class="tweet__block-author-slug">
+                                @harsha-singh
+                              </div>
+                            </div>
+                            <div class="tweet__block-dot">
+                              <span>&middot;</span>
+                            </div>
+                            <div class="tweet__block-publish-time">2h</div>
+                          </div>
+                          <div class="tweet__block-ellipsis">
+                            <div class="ellipsis-center">
 
-              <div class="whats-happening__block">
-                <div class="whats-happening__meta-information">
-                  Trending in India
-                </div>
-                <div class="whats-happening__trend-name">#NewtonSchool</div>
-                <div class="whats-happening__meta-information">50K tweets</div>
-              </div>
+                              <img
+                              class="ellipsis"
+                              src="src/images/svg/kebab-menu.svg"
+                              alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tweet__block-tweet">
+                           Lorem Ipsum has been
+                          the industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and scrambled
+                          it to make a type specimen book. It has survived not only
+                          five centuries, but also the leap into electronic
+                          typesetting, remaining essentially unchanged. It was
+                          popularised in the 1960s with the release of Letraset sheets
+                          containing Lorem Ipsum passages, and more recently with
+                          desktop publishing software like Aldus PageMaker including
+                          versions of Lorem Ipsum.
+                        </div>
+                        <div class="tweet__block-action__buttons">
+                          <div class="tweet__block-action__buttons-container">
+                            <div class="tweet__block-icon__container blue-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon blue" src="./src/images/svg/reply.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="tweet__block-icon__container green-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon green" src="./src/images/svg/retweet.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="tweet__block-icon__container red-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon red" src="./src/images/svg/like.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="tweet__block-icon__container blue-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon blue" src="./src/images/svg/share.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tweet__block">
+                      <div class="tweet__block-profile">
+                        <img
+                          class="tweet__logo"
+                          src="src/images/jpeg/harsha.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="tweet__block-content">
+                        <div class="tweet__block-misc">
+                          <div class="tweet__block-slug">
+                            <div class="tweet__block-author-details">
+                              <div class="tweet__block-author-name">Harsha</div>
+                              <div class="tweet__block-author-slug">
+                                @harsha-singh
+                              </div>
+                            </div>
+                            <div class="tweet__block-dot">
+                              <span>&middot;</span>
+                            </div>
+                            <div class="tweet__block-publish-time">2h</div>
+                          </div>
+                          <div class="tweet__block-ellipsis">
+                            <div class="ellipsis-center">
 
-              <div class="whats-happening__block">
-                <div class="whats-happening__meta-information">
-                  Trending - Trending
-                </div>
-                <div class="whats-happening__trend-name">#TobyMaquire</div>
-                <div class="whats-happening__meta-information">500K tweets</div>
-              </div>
-
-              <div class="whats-happening__block">
-                <div class="whats-happening__meta-information"></div>
-                <div class="whats-happening__trend-name">#Ashes</div>
-                <div class="whats-happening__meta-information">210k tweets</div>
-              </div>
-
-              <div class="whats-happening__block">
-                <div class="whats-happening__footer">
-                  <a href="">Show more</a>
-                </div>
-              </div>
-            </div>
-            <div class="who-to-follow">
-              <div class="who-to-follow__block">
-                <div class="who-to-follow__heading">Who to follow</div>
-              </div>
-
-              <div class="who-to-follow__block">
-                <div class="who-to-follow__inner-left">
-                  <img
-                    class="who-to-follow__author-logo"
-                    src="../src/images/jpeg/harsha.jpg"
-                    alt=""
-                  />
-                  <div class="who-to-follow__content">
-                    <div>
-                      <div class="who-to-follow__author-name">Harsha</div>
-                      <div class="who-to-follow__author-slug">
-                        @harsha-singh
+                              <img
+                              class="ellipsis"
+                              src="src/images/svg/kebab-menu.svg"
+                              alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tweet__block-tweet">
+                           Lorem Ipsum has been
+                          the industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and scrambled
+                          it to make a type specimen book. It has survived not only
+                          five centuries, but also the leap into electronic
+                          typesetting, remaining essentially unchanged. It was
+                          popularised in the 1960s with the release of Letraset sheets
+                          containing Lorem Ipsum passages, and more recently with
+                          desktop publishing software like Aldus PageMaker including
+                          versions of Lorem Ipsum.
+                        </div>
+                        <div class="tweet__block-action__buttons">
+                          <div class="tweet__block-action__buttons-container">
+                            <div class="tweet__block-icon__container blue-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon blue" src="./src/images/svg/reply.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="tweet__block-icon__container green-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon green" src="./src/images/svg/retweet.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="tweet__block-icon__container red-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon red" src="./src/images/svg/like.svg" alt="">
+                              </div>
+                            </div>
+                            <div class="tweet__block-icon__container blue-container">
+                              <div class="centering">
+                                <img class = "tweet__block-icon blue" src="./src/images/svg/share.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="who-to-follow__button">Follow</div>
               </div>
-
-              <div class="who-to-follow__block">
-                <div class="who-to-follow__inner-left">
-                  <img
-                    class="who-to-follow__author-logo"
-                    src="../src/images/jpeg/badal.png"
-                    alt=""
-                  />
-                  <div class="who-to-follow__content">
-                    <div>
-                      <div class="who-to-follow__author-name">Badal</div>
-                      <div class="who-to-follow__author-slug">
-                        @badal-pareta
+              <div class="two__two">
+                <div class="two__two-inner">
+                  <div class="search">
+                    <div class="search__padding">
+                      <div class="search__icon">
+                        <img
+                          class="search__icon-svg"
+                          src="src/images/svg/search.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="search__input">
+                        <input
+                          class="search__input-box"
+                          type="text"
+                          placeholder="Search Twitter"
+                        />
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="who-to-follow__button">Follow</div>
-              </div>
-
-              <div class="who-to-follow__block">
-                <div class="who-to-follow__inner-left">
-                  <img
-                    class="who-to-follow__author-logo"
-                    src="../src/images/jpeg/tuhin.jpg"
-                    alt=""
-                  />
-                  <div class="who-to-follow__content">
-                    <div>
-                      <div class="who-to-follow__author-name">Tuhin</div>
-                      <div class="who-to-follow__author-slug">
-                        @tuhin-bhomwick
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="who-to-follow__button">Follow</div>
-              </div>
-
-              <div class="who-to-follow__block">
-                <div class="who-to-follow__inner-left">
-                  <img
-                    class="who-to-follow__author-logo"
-                    src="../src/images/jpeg/raghav.jpg"
-                    alt=""
-                  />
-                  <div class="who-to-follow__content">
-                    <div>
-                      <div class="who-to-follow__author-name">Raghav</div>
-                      <div class="who-to-follow__author-slug">
-                        @ragavendhar-chouhan
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="who-to-follow__button">Follow</div>
-              </div>
-            </div> -->
-            <div class="whats-happening">
-                        <div class="whats-happening__head">
+                  <div class="misc">
+                    <div class="whats-happening">
+                      <div class="whats-happening__head">
                             What's Happening
                         </div>
                         <div class="whats-happening__block">
                             <div class="whats-happening__slug">
-                                <div class="whats-happening__head__slug-misc">
-                                    Trending in Newton School
-                                </div>
-                                <div class="whats-happening__head__slug-ellipsis">
-                                    <img class = "ellpisis" src="src/images/svg/kebab-menu.svg" alt="">
-                                </div>
+                              Trending in Newton School
                             </div>
                             <div class="whats-happening__content">
-                                Karthik
+                              Karthik
                             </div>
                             <div class="whats-happening__slug">
-                                25.1M Tweets
+                              25.1M Tweets
+                            </div>
+                            <div class=" whats-happening__ellipsis__center ">
+
+                              <img class = "ellipsis" src="src/images/svg/kebab-menu.svg" alt="">
                             </div>
                         </div>
                         <div class="whats-happening__show-more">
-                            <a href=""> Show more</a>
+                            <a class = "show-more__link" href=""> Show more</a>
                         </div>
                     </div>
                     <div class="whats-happening">
@@ -529,12 +510,48 @@
                             </div>
                         </div>
                         <div class="whats-happening__show-more">
-                            <a href=""> Show more</a>
+                            <a class = "show-more__link" href=""> Show more</a>
                         </div>
                     </div>
+                    <div class="misc__extras">
+                      <div class="misc__links-container">
+                        <a href="" class="misc__links">
+                          <span class = "misc__links-text">Terms of Service</span>
+                        </a>
+                      </div>
+                      <div class="misc__links-container">
+                        <a href="" class="misc__links">
+                          <span class = "misc__links-text">Privacy Policy</span>
+                        </a>
+                      </div>
+                      <div class="misc__links-container">
+                        <a href="" class="misc__links">
+                          <span class = "misc__links-text">Cookie Policy</span>
+                        </a>
+                      </div>
+                      <div class="misc__links-container">
+                        <a href="" class="misc__links">
+                          <span class = "misc__links-text">Accessibility</span>
+                        </a>
+                      </div>
+                      <div class="misc__links-container">
+                        <a href="" class="misc__links">
+                          <span class = "misc__links-text">Ads info</span>
+                        </a>
+                      </div>
+                      <div class="misc__links-container">
+                        <a href="" class="misc__links">
+                          <span class = "misc__links-text">More</span>
+                          <img class= "misc__links-more" src="./src/images/svg/kebab-menu.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="misc__meta">© 2021 Twitter, Inc.</div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
       </div>
-    </div>
   </body>
-</html>
